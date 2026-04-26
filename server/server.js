@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: "https://electricity-bill-calculator15.vercel.app"
+  origin: "https://electricity-bill-calculator20.vercel.app/"
 }));
 app.use(express.json());
 
