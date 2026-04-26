@@ -40,7 +40,7 @@ export const loginUser = async (data) => {
     body: JSON.stringify(data),
   });
 
-  return handleResponse(res);
+  return handleResponse(res); // this throws error if failed
 };
 
 // ================= BILL =================
