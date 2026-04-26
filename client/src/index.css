@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.input {
+  @apply w-full p-3 mb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
+
+.btn-primary {
+  @apply w-full bg-indigo-600 text-white p-3 rounded-lg font-semibold hover:bg-indigo-700 transition;
+}
+
+.input-light {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+}
+.input-light:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+/* FEATURE CARD */
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+}
+
+/* ICON */
+.feature-card .icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 15px;
+  color: #6366f1;
+}
+
+/* TITLE */
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* TEXT */
+.feature-card p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* HOVER EFFECT */
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(99,102,241,0.2);
+}
+
+.input {
+  @apply w-full p-3 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
+
+.btn-primary {
+  @apply w-full bg-indigo-600 text-white p-3 rounded-lg font-semibold hover:bg-indigo-700 transition;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.input-premium {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  background: rgba(255,255,255,0.9);
+  transition: 0.3s;
+}
+
+.input-premium:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar (optional premium feel) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}
+
+/* PROFILE INPUT */
+.input-profile {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-profile:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+/* ICON INSIDE INPUT */
+.icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #9ca3af;
+}
+
+/* VIEW MODE */
+.view-field {
+  padding: 12px 12px 12px 40px;
+  background: #f9fafb;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
