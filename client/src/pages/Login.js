@@ -20,30 +20,22 @@ export default function Login() {
     if (!data.email || !data.password) {
       return alert("Please fill all fields");
     }
-
+  
     try {
       setLoading(true);
-
+  
       const res = await loginUser(data);
-
-      // 🔥 HANDLE ERROR FROM BACKEND
-      if (!res.token) {
-        alert(res.error || "Invalid credentials");
-        setLoading(false);
-        return;
-      }
-
-      // 🔥 STORE REAL DATA
+  
+      // If success
       localStorage.setItem("token", res.token);
       localStorage.setItem("user", JSON.stringify(res.user));
-
+  
       alert("Login successful");
-
       navigate("/dashboard");
-
+  
     } catch (err) {
-        console.error(err);
-        alert(err.message);  // ✅ FIX
+      console.error(err);
+      alert(err.message); // 🔥 show backend message
     } finally {
       setLoading(false);
     }
