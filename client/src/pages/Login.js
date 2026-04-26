@@ -42,8 +42,8 @@ export default function Login() {
       navigate("/dashboard");
 
     } catch (err) {
-      console.error(err);
-      alert("Server error");
+        console.error(err);
+        alert(err.message || "Server error");  // ✅ FIX
     } finally {
       setLoading(false);
     }
