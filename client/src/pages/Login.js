@@ -43,7 +43,7 @@ export default function Login() {
 
     } catch (err) {
         console.error(err);
-        alert(err.message || "Server error");  // ✅ FIX
+        alert(err.message);  // ✅ FIX
     } finally {
       setLoading(false);
     }
