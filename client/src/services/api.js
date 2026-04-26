@@ -1,4 +1,4 @@
-const BASE_URL = "https://electricity-bill-calculator-wyh5.onrender.com";
+const BASE_URL = "electricity-bill-calculator-production.up.railway.app";
 
 // 🔥 UNIVERSAL RESPONSE HANDLER
 const handleResponse = async (res) => {
