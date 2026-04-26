@@ -1,4 +1,4 @@
-const BASE_URL = process.env.REACT_APP_API_URL;;
+const BASE_URL = "https://electricity-bill-calculator-production.up.railway.app/api";
 
 // 🔥 UNIVERSAL RESPONSE HANDLER
 const handleResponse = async (res) => {
