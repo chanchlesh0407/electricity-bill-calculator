@@ -35,3 +35,7 @@ app.use((req, res) => {
     error: "Route not found",
   });
 });
+
+app.get("/api/test", (req, res) => {
+  res.send("API working");
+});
