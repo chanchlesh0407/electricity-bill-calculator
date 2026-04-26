@@ -30,12 +30,14 @@ app.listen(process.env.PORT, () => {
   console.log(`Server running on ${process.env.PORT}`);
 });
 
+app.get("/api/test", (req, res) => {
+  res.send("API working");
+});
+
 app.use((req, res) => {
   res.status(404).json({
     error: "Route not found",
   });
 });
 
-app.get("/api/test", (req, res) => {
-  res.send("API working");
-});
+
